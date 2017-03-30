@@ -1,0 +1,22 @@
+<template>
+  
+  <ai-dialog class="confirmation-dialog">
+    
+    <ai-dialog-header>
+      Header
+    </ai-dialog-header>
+    
+    <ai-dialog-body>
+      <svg class="dialog-icon">
+        <use xlink:href="some-icon"></use>
+      </svg>
+      <span>Something</span>    
+    </ai-dialog-body>
+    
+    <ai-dialog-footer>
+      <button repeat.for="button of content.buttons" class="${button.name}" click.delegate="controller.ok(button.action)">Button</button>
+    </ai-dialog-footer>
+    
+  </ai-dialog>
+
+</template>
